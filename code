@@ -1,0 +1,14 @@
+package com.company;
+import java.util.Scanner;
+
+public class ComputeLoan {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter number of years");
+        float numberofyears = s.nextFloat();
+        System.out.println("ENTER YOUR LOAN AMOUNT");
+        float loanamount = s.nextFloat();
+        System.out.println("Enter your Monthly Interest rate");
+        float monthlyinterestrate = s.nextFloat();
+        double monthly_payments =lona*monthlyinterestrate/(1-1/Math.pow(1+monthlyinterestrate,numberofyears*12));
+        double totalpayments = monthly_payments *numberofyears*12;
